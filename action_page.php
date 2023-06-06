@@ -20,7 +20,7 @@
             . "\r\n".'Content-type: text/html; charset=utf-8' 
             . "\r\n".'From: no-reply@scarletai.xyz'
             . "\r\n";
-        if(mail($recipient, $email_title, $email_body, $headers)) {
+        if(mail("ashley@scarletai.xyz", $email_title, $email_body, $headers)) {
             // Let them know their message was sent then redirect them back to the index page after 5 seconds.
             echo '<p>Thank you for contacting us, '.$visitor_name.'. You will get a reply within 24 hours.</p>';
             header("refresh:5;url=index.html");
