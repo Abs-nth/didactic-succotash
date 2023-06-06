@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: https://ogp.me/ns#">
+    <head>
+        <title>Ash ▆▆▆▆▆</title>
+        <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/128583937?s=400&u=6c3397fea1540ee83a75c40fdb4c2aa1c1087813&v=4" type="image/x-jpg">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Ashley's Portfolio</title>
+        <meta name="description" content="Some Self-Descriptive Page!">
+        <meta property="og:url" content="https://ashley.scarletai.xyz">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Ashley (Ash) - She/Her">
+        <meta property="og:description" content="Some Self-Descriptive Page!">
+        <meta property="og:image" content="https://avatars.githubusercontent.com/u/128583937?s=400&u=6c3397fea1540ee83a75c40fdb4c2aa1c1087813&v=4">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta property="twitter:domain" content="evelynn.scarletai.xyz">
+        <meta property="twitter:url" content="https://ashley.scarletai.xyz">
+        <meta name="twitter:title" content="Ashley (Ash) - She/Her">
+        <meta name="twitter:description" content="Some Self-Descriptive Page!">
+        <meta name="twitter:image" content="https://avatars.githubusercontent.com/u/128583937?s=400&u=6c3397fea1540ee83a75c40fdb4c2aa1c1087813&v=4">
+        <meta name="theme-color" content="#7805D6">
+        <link rel="script" href="scripts/main.js">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="navbar" id="navbar">
+            <a href="index.html">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#projects">Projects</a>
+            <a href="#" class="active">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="navbarFunc();">
+                <i class="fa-sharp fa-light fa-tally-4"></i>
+            </a>
+        </div>
+        <div class="content">
+            <div class="hero-image responsive">
+                <div class="hero-text">
+                    <h1 style="font-size:50px">Ashley (Ash)</h1>
+                    <p id="pronouns">She/Her</p>
+                    <p id="skills">Software and Network Engineer</p>
+                </div>
+            </div>
+            <!-- Create A Break between the hero and about me -->
+            <div class="break"></div>
+            <div class="container">
+                <form action="action_page.php">
+                    <label for="fname">First Name</labe>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </div> 
+        </div>
+        <div class="break"></div>
+        <div class="footer">
+            <p>© 2023 Ashley (Ash) - She/Her</p>
+        </div>
+        <script>
+            var doc = document.getElementById("navbar");
+            function navbarFunc() {
+                var x = document.getElementById("navbar");
+                if (x.className === "navbar") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "navbar";
+                }
+            }
+            window.onscroll = function() {
+                scrollFunction();
+            };
+            var sticky = doc.offsetTop;
+            function scrollFunction() {
+                if (window.scrollY >= sticky) {
+                    doc.classList.add("sticky");
+                } else {
+                    doc.classList.remove("sticky");
+                }
+            }
+        </script>
+    </body>
+</html>
+
